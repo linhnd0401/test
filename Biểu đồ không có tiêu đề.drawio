@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-03T02:36:10.036Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SFive/95.0 Chrome/95.0.4638.54 Safari/537.36" etag="xngvgqPCFyWL3q9h8vJi" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-03T02:40:08.301Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SFive/95.0 Chrome/95.0.4638.54 Safari/537.36" etag="4SJLB8a95r49h9nxMEX8" version="20.5.1" type="github">
   <diagram id="Of9K0XV3K-fzxSNCaOFY" name="Trang-1">
     <mxGraphModel dx="1662" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -43,8 +43,14 @@
         <mxCell id="izKcfKjHX300lUZ0ldDA-12" value="transactionID = date(fomat: YMDHis) + rand(100000,999999)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="225" y="510" width="430" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="izKcfKjHX300lUZ0ldDA-14" target="izKcfKjHX300lUZ0ldDA-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="izKcfKjHX300lUZ0ldDA-14" value="subId = hash(sha256, merchant_code + &#39;_MyViettel_&#39; + msisdn)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="205" y="600" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-16" value="checkSum = encrypt (merchant.accessCode + merchant_code + subId + transactionId, merchant.hashkey)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="690" width="610" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
