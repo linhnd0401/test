@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2022-11-03T01:51:12.956Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SFive/95.0 Chrome/95.0.4638.54 Safari/537.36" etag="pNuS0MgYAXK5RAFQKR4M" version="20.5.1" type="github"><diagram id="Of9K0XV3K-fzxSNCaOFY" name="Trang-1">ddHBEoIgEADQr+GOUE2ezfLSyUNnRjZhBl0HabS+Ph0wY6wLs7xdWGYhPGvGixWduqIEQxiVI+EnwtghTaZ1hqcHlu481FZLT8kKpX5BQBr0oSX0UaFDNE53MVbYtlC5yIS1OMRldzRx107UsIGyEmarNy2d8nrc09UL0LVaOic0ZBqxFAfolZA4fBHPCc8sovNRM2Zg5tktc/Hnzn+yn4dZaN2PA1Ow3j1tog/i+Rs=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-03T02:33:55.224Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SFive/95.0 Chrome/95.0.4638.54 Safari/537.36" etag="8T86rKYQfU7vdgK0htMs" version="20.5.1" type="github">
+  <diagram id="Of9K0XV3K-fzxSNCaOFY" name="Trang-1">
+    <mxGraphModel dx="1662" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="izKcfKjHX300lUZ0ldDA-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="izKcfKjHX300lUZ0ldDA-1" target="izKcfKjHX300lUZ0ldDA-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-1" value="Kiểm tra merchant_code null" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="100" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="izKcfKjHX300lUZ0ldDA-2" target="izKcfKjHX300lUZ0ldDA-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-2" value="Lấy thông tin tham số:x&lt;br&gt;merchant_code: Mã đối tác&lt;br&gt;msisdn:" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="10" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="izKcfKjHX300lUZ0ldDA-5" target="izKcfKjHX300lUZ0ldDA-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-5" value="Lấy thông tin đối tác (merchant)&lt;br&gt;select trong bảng Merchant có merchant_code và status = 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="240" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-7" value="Không null" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="445" y="200" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="izKcfKjHX300lUZ0ldDA-8" target="izKcfKjHX300lUZ0ldDA-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-8" value="Kiểm tra tồn tại bản ghi" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="320" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="izKcfKjHX300lUZ0ldDA-10" target="izKcfKjHX300lUZ0ldDA-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-10" value="set biến url = merchant.connectUrl" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="420" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="izKcfKjHX300lUZ0ldDA-12" target="izKcfKjHX300lUZ0ldDA-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-12" value="transactionID = date(fomat: YMDHis) + rand(100000,999999)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="510" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="izKcfKjHX300lUZ0ldDA-14" value="subId = hash(sha256, merchant_code + &#39;_MyViettel_&#39; + msisdn)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="600" width="470" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
